@@ -1,0 +1,5 @@
+{
+    "require": {
+        "mtownsend/xml-to-array": "^2.0"
+    }
+}

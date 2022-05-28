@@ -1,0 +1,4 @@
+/vendor
+/.idea
+public/input.gpx
+public/output.json
