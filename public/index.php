@@ -18,7 +18,6 @@ if (isset($_FILES["userfile"]) && file_exists($_FILES["userfile"]["tmp_name"]) &
 
 		foreach ($array['wpt'] as &$tulip) {
 			unset($tulip['ele']);
-			unset($tulip['@attributes']);
 		}
 
 		$json = json_encode($array);
