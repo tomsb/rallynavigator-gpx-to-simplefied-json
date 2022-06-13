@@ -14,7 +14,7 @@ if (isset($_FILES["userfile"]) && file_exists($_FILES["userfile"]["tmp_name"]) &
 	@$array = XmlToArray::convert($xml);
 
 	if (is_array($array) && ! empty($array) && isset($array['wpt'])) {
-		unset($array['trk']);
+		unset($array['trk']['trkseg']);
 
 		foreach ($array['wpt'] as &$tulip) {
 			unset($tulip['ele']);
